@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome To My World</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:url("BG.jpg") center center/cover no-repeat;
+overflow:hidden;
+position:relative;
+}
+
+/* Dark Overlay */
+body::before{
+content:"";
+position:absolute;
+inset:0;
+background:rgba(0, 0, 0, 0.082);
+}
+
+/* Character */
+
+.character{
+position:absolute;
+top:40px;
+left:50%;
+transform:translateX(-50%);
+width:350px;
+z-index:2;
+pointer-events:none;
+}
+
+/* Card */
+
+.card{
+    position:absolute;
+    left:80px;
+    top:50%;
+    transform:translateY(-50%);
+
+    width:420px;
+    padding:35px;
+    text-align:center;
+
+    background:rgba(0, 0, 0, 38);
+    backdrop-filter:blur(18px);
+
+    border: radius 35px;
+    border:1px solid rgba(226, 223, 52, 0.726);
+
+    box-shadow:0 0 30px rgba(0,0,0,.5);
+    z-index:5;
+   
+}
+
+
+
+.profile{
+
+width:130px;
+height:130px;
+border-radius:50%;
+object-fit:cover;
+border:3px solid rgb(226, 223, 52, 0.726);
+margin-top:-100px;
+margin-bottom:20px;
+
+}
+
+h1{
+
+color:rgb(8, 206, 255);
+font-size:40px;
+font-weight:700;
+line-height:1.2;
+
+}
+
+p{
+
+color:#ffffff;
+margin:15px 0 30px;
+
+}
+
+.btn{
+
+display:block;
+
+text-decoration:none;
+
+padding:15px;
+
+margin:15px 0;
+
+border-radius:12px;
+
+font-weight:600;
+
+transition:.3s;
+
+}
+
+.fb{
+
+background:#367cd8;
+color:white;
+
+}
+
+.tt{
+
+background:#111;
+color:white;
+border:none
+
+}
+.dc{
+
+    background: #367cd8;
+    color: #ffffff;
+    border: none;
+
+}
+
+
+.git{
+
+background:#24292f;
+color:white;
+
+}
+
+.btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:0 0 45px rgba(255,255,255,.3);
+
+}
+
+.footer{
+
+margin-top:30px;
+
+font-size:13px;
+
+color:#bbb;
+
+}
+
+</style>
+</head>
+
+<body>
+
+
+<div class="card card-left">
+
+<img src="my-web.jpg" class="profile">
+
+<h1>WELCOME TO<br>MY WORLD</h1>
+
+<p>Hi, I'm <b>ARAFAT NIROB</b><br>Student & Front-End Developer</p>
+
+<a href="https://www.facebook.com/arafat.nirob.95773" class="btn btn fb" target="_blank">
+<i class="ti ti-brand-facebook"></i> Facebook 
+</a>
+
+<a href="https://www.tiktok.com/@n.a7070" class="btn btn tt" target="_blank">
+ <i class="ti ti-brand-tiktok"></i> Tiktok
+</a>
+
+<a href="https://discord.gg/strike_019" class="btn dc" target="_blank">
+    <i class="ti ti-brand-discord"></i> Discord
+</a>
+
+<a href="https://github.com/arafat07" class="btn btn git" target="_blank">
+    <i class="ti ti-brand-github"></i> GitHub
+</a>
+
+<div class="footer">
+
+© 2025 Nirob
+
+</div>
+
+
+</div>
+
+
+</body>
+</html>
